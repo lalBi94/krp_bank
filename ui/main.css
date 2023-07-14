@@ -1,0 +1,280 @@
+body {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Helvetica", sans-serif;
+}
+
+*::selection {
+    background: transparent;
+}
+
+#container {
+    padding: 50px;
+    position: relative;
+    width: 1000px;
+    height: 630px;
+    background: rgb(230,129,0);
+    background: linear-gradient(180deg, rgba(230,129,0,1) 0%, rgba(228,147,54,1) 35%, rgba(255,202,136,1) 100%);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    box-shadow: 5px 5px 5px 5px white;
+}
+
+#container > #cur-action {
+    position: absolute;
+    top: 19.4%;
+    left: 30%;
+    z-index: 2;
+    background: white;
+    padding: 20px;
+    width: 200px;
+    border: 1px solid black;
+    border-bottom: none;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#container > #cur-action > #cur-amount {
+    padding: 10px;
+    width: 80%;
+    background: gray;
+    color: white;
+    font-weight: 800;
+}
+
+#container > #pad {
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 30%;
+    left: 25%;
+    width: 450px;
+    height: 230px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+#container > #transfer-frame {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 250px;
+    top: 220px;
+    gap: 35px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+#container > #transfer-frame > #transfer-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.6rem;
+    justify-content: center;
+    gap: 25px;
+}
+
+#container > #transfer-frame > #transfer-frame-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+#container > #transfer-frame > #tranfert-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+#container > #transfer-frame > #transfer-inputs > label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 30px;
+}
+
+#container > #transfer-frame > #transfer-inputs > label > input {
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.6rem;
+    border-radius: 50px;
+}
+
+#container > #pad > #pad-numbers, #pad-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#container > #pad > #pad-numbers > button {
+    width: 70px;
+    height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#container > #pad > #pad-controls > button {
+    width: 90px;
+    height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#container > #pad > #pad-controls > .r {
+    background: #EA5941;
+}
+
+#container > #pad > #pad-controls > .y {
+    background: #F8DF45;
+}
+
+#container > #pad > #pad-controls > .g {
+    background: #5EC568;
+}
+
+#container > #top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-weight: 800;
+}
+
+#container > #top > #coin > img {
+    width: 70%;
+    height: auto;
+}
+
+#container > #middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#container > #middle > #left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+#container > #middle > #left > #texts, #values {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+#container > #middle > #left > #texts > .text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+}
+
+#container > #middle > #left > #values > .value {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 5px 5px white;
+    cursor: pointer;
+}
+
+#container > #top > #brand > img {
+    width: 350px;
+    height: auto;
+    filter: invert(100%) sepia(4%) saturate(0%) hue-rotate(26deg) brightness(116%) contrast(100%);
+}
+
+#container > #top > #discord {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#container > #top > #discord > #discord-logo {
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+    background: white;
+    box-shadow: 0 0 5px 5px white;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 50%;
+}
+
+#container > #top > #discord > #discord-logo:hover {
+    transform: scale(0.95);
+}
+
+#container > #top > #discord > #exit {
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.1s ease-in-out;
+    filter: brightness(0) saturate(100%) invert(9%) sepia(79%) saturate(7307%) hue-rotate(360deg) brightness(100%) contrast(107%);
+}
+
+#container > #top > #discord > #exit:hover {
+    transform: scale(0.95);
+    filter: brightness(0) saturate(100%) invert(21%) sepia(73%) saturate(2346%) hue-rotate(344deg) brightness(118%) contrast(85%);
+}
+
+#container > #bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn {
+    background: #E68100FF;
+    border: none;
+    color: white;
+    width: 120px;
+    height: 70px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 5px white;
+    transition: transform 0.1s ease-in-out;
+}
+
+.btn:hover {
+    transition: 1s;
+    transform: scale(0.95);
+    background: #ffa74b;
+}

@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>Bank - Krypton</title>
+        <meta ownerdiscord="bilaaaaaaaaaal">
+        <meta tebex="https://kryptonproject.tebex.io/">
+        <meta discordserver="https://discord.gg/xpCc6XmUaX">
+        <link rel="stylesheet" href="./main.css">
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    </head>
+
+    <boby>
+        <div id="container">
+            <div id="top">
+                <span id="coin">
+                    <img src="./assets/coin_logo.gif" alt="">
+                </span>
+
+                <span id="brand">
+                    <img src="./assets/server_logo.png" alt="">
+                    <span style="color: white;">ATM BANK</span>
+                </span>
+
+                <span id="discord">
+                    <img id="discord-logo" src="./assets/discord_logo.png" alt="">
+                    <img id="exit" src="./assets/exit_logo.png" alt="">
+                </span>
+            </div>
+
+            <div id="middle">
+                <div id="left">
+                    <div id="texts">
+                        <span class="text">Client</span>
+                        <span class="text">Balance</span>
+                        <span class="text">Account</span>
+                    </div>
+
+                    <div id="values">
+                        <span id="client" class="value">UNKNOWN</span>
+                        <span id="balance" class="value">UNKNOWN</span>
+                        <span id="accountn" class="value">UNKNOWN</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="bottom">
+                <button class="btn" id="deposit">Depot</button>
+                <button class="btn" id="withdraw">Retrait</button>
+                <button class="btn" id="transfer">Virement</button>
+            </div>
+
+            <div id="transfer-frame" style="display: none;">
+                <span id="transfer-frame-title">Virement bancaire <span style="color: red;">(min. 1 000$)</span></span>
+
+                <div id="transfer-inputs">
+                    <label>
+                        <span>Numero du compte</span>
+                        <input id="tranfer-n-account" type="text" placeholder="XXXX-XXXX-XXXX" maxlength="19"/>
+                    </label>
+
+                    <label>
+                        <span>Montant</span>
+                        <input id="tranfer-amount" type="number" min="0" placeholder="..."/>
+                    </label>
+                </div>
+
+                <div id="tranfert-btn">
+                    <button class="btn" id="transfer-cancel">Retour</button>
+                    <button class="btn" id="transfer-ok">OK</button>
+                </div>
+            </div>
+
+            <div id="cur-action" style="display: none;">
+                <span id="title-action"></span>
+                <span id="cur-amount"></span>
+            </div>
+
+            <div id="pad" style="display: none;">
+                <div id="pad-numbers">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button></button>
+                    <button>0</button>
+                    <button></button>
+                </div>
+
+                <div id="pad-controls">
+                    <button id="back" class="r">Retour</button>
+                    <button id="remove" class="y">Effacer</button>
+                    <button id="validate" class="g">Valider</button>
+                    <button></button>
+                </div>
+            </div>
+        </div>
+
+        <script src="./main.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    </boby>
+</html>
